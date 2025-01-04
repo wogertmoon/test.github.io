@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Watch  Naruto Anime on WACKO ANIME </title>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+
+		
+.menu-bar img{
+    width: 100px;
+    margin: 13px;
+    padding: 12px;
+    border-radius: 50%;
+    
+}
+.menu-bar{
+    
+    background: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+.menu-bar ul{
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    
+    
+}
+
+.menu-bar ul li{
+    width: 99px;
+    margin: 13px;
+    padding: 12px;
+    
+    
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #cb6868;
+    /* display: block; */
+}
+
+ .menu-bar ul li:hover
+{
+    border-radius: 1px;
+    background-color:rgb(50, 49, 49);
+}
+
+.menu-bar .fa{
+    margin:2px;
+}
+
+
+.fa-angle-right{
+    float: right;
+}
+
+.text-footer{ 
+    text-align: center;
+    padding: 80px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.div-row div{
+
+    padding: 10px;
+    vertical-align: auto;
+   
+}
+.div img{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: rgb(28, 30, 30);
+}
+		.cont-1 {
+		    max-width: 900px;
+		    margin: 15px auto;
+		}
+		.cont-2 {
+		    position: relative;
+		    padding-bottom: 56.25%;
+		    height: 0;
+		}
+		.box {
+		    position: absolute;
+		    top: 20px;
+		    left: 5px;
+		    width: 100%;
+		    height: 100%;
+		}
+		video {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: fill;
+		}
+		.button-section {
+		    display: flex;
+		    justify-content: center;
+		    margin-top: 20px;
+		}
+		.button {
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 10px 20px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 10px;
+		    cursor: pointer;
+		}
+		.button:hover {
+		    background-color: #3e8e41;
+		}
+		.button:active {
+		    background-color: #3e8e41;
+		    box-shadow: 0 5px #666;
+		    transform: translateY(4px);
+		}
+/* footer css      */
+.div-2{
+  background-color: #151010;
+  display:flex;
+  
+
+}
+.owner-details {
+  
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.owner-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.owner-text {
+  font-size: 14px;
+}
+	
+		
+		
+	</style>
+</head>
+<body>
+	<!--menu bar code start-->
+    <div class="menu-bar">
+		<ul>		  
+		  <img src="img/w.png" alt="Avatar">
+		  </a>
+		  <li class="active"><a href="index.html" id="home"><i class="fa fa-home"></i>首页</a></li>
+		  <li> <a href="About.html"><i class="fa fa-user" aria-hidden="true"></i>关于</a></li>
+		  <li><a href="#"><i class="fa-solid fa-clapperboard"></i>影视</a></li> 
+		  <li><a href="..#section-3"><i class="fa fa-phone"></i>联系</a></li>
+		</ul>
+		  
+	</div>
+
+	<div class="cont-1">
+        	<div class="cont-2">
+		    	<div class="box">
+					<video id="videoPlayer" width="950" height="450" controls>
+					<source src="" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+            	</div>
+        	</div>
+		</div>
+
+		<div class="button-section">
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 1</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 2</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 3</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 4</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 5</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 6</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 7</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 8</button>
+			<button class="button" onclick="playVideo('uploads/Wacko.mp4')">ep 9</button>
+		</div>
+
+		
+
+    
+
+        
+	</div>
+    
+<!--bolttom footer code and copy right code start -->
+<footer class="background">
+	  
+
+
+	<div class="div-2">
+	  <div class="owner-details">
+		<div class="owner-image">
+		  <img src="img/w.png" alt="Owner Image">
+		</div>
+	  </div>	
+	</div> 
+	
+	</footer>
+
+
+	<script>
+		function playVideo(videoSource) {
+			var videoPlayer = document.getElementById("videoPlayer");
+			videoPlayer.src = videoSource;
+			videoPlayer.play();
+		}
+	</script>
+</body>
+</html>
